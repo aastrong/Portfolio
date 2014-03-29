@@ -98,6 +98,7 @@ section.content { position: relative;z-index: 9; background: $white; box-shadow:
 }
 #message { display: block; position: absolute; top: -45px;}
 .error_message { background: rgba(255,255,255,0.2); padding:2px 10px; }
+.success-field { display: none !important; }
 
 @media (min-width: 768px) {
 	#getintouch { display: inline; }

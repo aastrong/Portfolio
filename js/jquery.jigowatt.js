@@ -19,16 +19,17 @@ jQuery(document).ready(function(){
 			function(data){
 				document.getElementById('message').innerHTML = data;
 				$('#message').slideDown('slow');
+				$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
 				$('#submit').removeAttr('disabled');
 				if(data.match('success') != null) {
-					$('#message').fadeOut('slow');
 					$('#contactform').fadeOut('slow');
 					$('.contact').removeClass('open');
-			        $('section.background .bg2').removeClass('shown');
-			        $('.container.name').fadeIn(500);
-			        $('.container.name').animate("opacity", "1");
-			        $('.success').addClass('shown');
+	                $('section.background .bg2').removeClass('shown');
+	                $('.container.name').fadeIn(500);
+	                $('.container.name').animate("opacity", "1");
+	                $('.success').addClass('shown');
 				}
+
 			}
 		);
 
