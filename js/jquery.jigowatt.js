@@ -17,13 +17,18 @@ jQuery(document).ready(function(){
 			comments: $('#comments').val(),
 		},
 			function(data){
+				document.getElementById('message').innerHTML = data;
+				$('#message').slideDown('slow');
 				$('#submit').removeAttr('disabled');
-				$('.contact').removeClass('open');
-		        $('section.background .bg2').removeClass('shown');
-		        $('.container.name').fadeIn(500);
-		        $('.container.name').animate("opacity", "1");
-		        $('.success').addClass('shown');
-
+				if(data.match('success') != null) {
+					$('#message').fadeOut('slow');
+					$('#contactform').fadeOut('slow');
+					$('.contact').removeClass('open');
+			        $('section.background .bg2').removeClass('shown');
+			        $('.container.name').fadeIn(500);
+			        $('.container.name').animate("opacity", "1");
+			        $('.success').addClass('shown');
+				}
 			}
 		);
 
