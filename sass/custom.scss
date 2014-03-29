@@ -16,7 +16,7 @@ $a-h: darken($a, 30%);
 }
 
 
-body { opacity: 0; padding-bottom: 50px; cursor:url(../images/cursor1.png) 5 5,default; padding-top: 500px; @include transition(opacity 1.2s ease-in);  @include transition-delay(0.2s); font-family: Lato !important; font-weight: 500; line-height: 32px; font-size: 18px; color:#444; 
+body { opacity: 0; padding-bottom: 50px; /* cursor:url(../images/cursor1.png) 5 5,default; */ padding-top: 500px; @include transition(opacity 1.2s ease-in);  @include transition-delay(0.2s); font-family: Lato !important; font-weight: 500; line-height: 32px; font-size: 18px; color:#444; 
 	&.fadein { opacity: 1;
 		section.background {
 			h1, h2 {@include transition(all 0.8s ease-in);  @include transition-delay(1s);  top: 0; opacity: 1;}
@@ -26,8 +26,8 @@ body { opacity: 0; padding-bottom: 50px; cursor:url(../images/cursor1.png) 5 5,d
 		}
 	}
 }
-label, input, textarea {  cursor:url(../images/cursor1.png) 5 5,default;
-}
+// label, input, textarea {  cursor:url(../images/cursor1.png) 5 5,default;
+// }
 .form-control::-webkit-input-placeholder { color: rgba(255,255,255,0.6); }
 .form-control:-moz-placeholder { color: rgba(255,255,255,0.6); }
 .form-control::-moz-placeholder { color: rgba(255,255,255,0.6); }
@@ -38,7 +38,7 @@ h1 { font-family: Montserrat;}
 h2 { font-weight: 300; font-size:24px; line-height: 20px; margin-top:0; }
 p { margin-bottom: 20px;}
 a, button { color:$a; @include transition(all 0.3s ease-in-out); border-bottom: 1px solid $a; padding-bottom: 2px;
-	&:hover { color:$a-h; text-decoration: none; border-bottom: 1px solid $a-h;  cursor:url(../images/cursor2.png) 5 5,default; }
+	&:hover { color:$a-h; text-decoration: none; border-bottom: 1px solid $a-h; /* cursor:url(../images/cursor2.png) 5 5,default; */}
 }
 @mixin blur($a){
 	-webkit-filter: blur($a); -moz-filter: blur($a); -o-filter: blur($a); -ms-filter: blur($a); filter: blur($a);
