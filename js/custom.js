@@ -23,7 +23,7 @@ $(window).load(function(){
     var oVal2;
     var oVal3;
     oVal = $(window).scrollTop() / 400;
-    oVal2 =  1- ($(window).scrollTop() /250);
+    oVal2 =  1- ($(window).scrollTop() /200);
     oVal3 =  (($(window).scrollTop() / 250)*30) + 180;
     $(".blur").css("opacity", oVal);
     $(".background .container.name").css("opacity", oVal2);
