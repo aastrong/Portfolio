@@ -112,12 +112,12 @@ body.fadein section.content .myimage2 {
 }
 
 ::selection {
-  background: #428bca;
+  background: #be5154;
   color: white;
 }
 
 ::-moz-selection {
-  background: #428bca;
+  background: #be5154;
 }
 
 h1 {
@@ -136,17 +136,17 @@ p {
 }
 
 a, button {
-  color: #428bca;
+  color: #be5154;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid #428bca;
+  border-bottom: 1px solid #be5154;
   padding-bottom: 2px;
 }
 a:hover, button:hover {
-  color: #193c5a;
+  color: #562022;
   text-decoration: none;
-  border-bottom: 1px solid #193c5a;
+  border-bottom: 1px solid #562022;
   /* cursor:url(../images/cursor2.png) 5 5,default; */
 }
 
