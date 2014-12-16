@@ -150,6 +150,10 @@ a:hover, button:hover {
   /* cursor:url(../images/cursor2.png) 5 5,default; */
 }
 
+.snowfall-flakes {
+  border-radius: 50%;
+}
+
 section.background {
   position: fixed;
   top: 0;

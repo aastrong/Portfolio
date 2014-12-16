@@ -34,7 +34,7 @@ $(window).load(function(){
 }).call(this);
 
 
-
+$('section.background').snowfall({ maxSize : 5});
 
 });
 

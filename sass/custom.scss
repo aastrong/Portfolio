@@ -41,6 +41,7 @@ p { margin-bottom: 20px;}
 a, button { color:$a; @include transition(all 0.3s ease-in-out); border-bottom: 1px solid $a; padding-bottom: 2px;
 	&:hover { color:$a-h; text-decoration: none; border-bottom: 1px solid $a-h; /* cursor:url(../images/cursor2.png) 5 5,default; */}
 }
+.snowfall-flakes { border-radius: 50%; }
 @mixin blur($a){
 	-webkit-filter: blur($a); -moz-filter: blur($a); -o-filter: blur($a); -ms-filter: blur($a); filter: blur($a);
 }
