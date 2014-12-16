@@ -23,6 +23,7 @@ body { opacity: 0; padding-bottom: 50px; /* cursor:url(../images/cursor1.png) 5 
 		}
 		section.content { 
 			.myimage { @include transition(all 0.8s ease-in);  @include transition-delay(1.8s); opacity: 1; top: -75px; }
+			.myimage2 { @include transition(all 0.8s ease-in);  @include transition-delay(1.8s); opacity: 1; top: -116px; }
 		}
 	}
 }
@@ -82,7 +83,7 @@ section.content { position: relative;z-index: 9; background: $white; box-shadow:
 	.myimage { position: absolute; top: -50px; opacity: 0; left: calc(50% - 75px); width: 150px; height: 150px; overflow: hidden; border-radius: 50%; box-shadow: 0 -1px 0 8px $white,0 -14px 20px 5px rgba(0,0,0,0.5);
 		img { width: 100%; }
 	}
-	.myimage2 { position: absolute; top: -50px; opacity: 0; left: calc(50% - 75px); width: 200px; height: 159px;
+	.myimage2 { position: absolute; top: -91px; opacity: 0; left: calc(50% - 48px); width: 150px; height: 159px;
 		img { width: 100%; }
 	}
 	.success { opacity: 0; -webkit-transition: opacity 0.5s ease-in-out; -moz-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; background: rgba(255,255,255,0.9); top: -72px; position: absolute; right: 10px; text-align: center; line-height: 23px; font-weight: 300; padding: 18px 39px;

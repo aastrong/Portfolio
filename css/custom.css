@@ -84,6 +84,16 @@ body.fadein section.content .myimage {
   opacity: 1;
   top: -75px;
 }
+body.fadein section.content .myimage2 {
+  -webkit-transition: all 0.8s ease-in;
+  -moz-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+  -webkit-transition-delay: 1.8s;
+  -moz-transition-delay: 1.8s;
+  transition-delay: 1.8s;
+  opacity: 1;
+  top: -116px;
+}
 
 .form-control::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -295,10 +305,10 @@ section.content .myimage img {
 }
 section.content .myimage2 {
   position: absolute;
-  top: -50px;
+  top: -91px;
   opacity: 0;
-  left: calc(50% - 75px);
-  width: 200px;
+  left: calc(50% - 48px);
+  width: 150px;
   height: 159px;
 }
 section.content .myimage2 img {
