@@ -1,6 +1,6 @@
 @import 'bourbon';
 
-$white: #fff; 
+$white: #fff;
 $header: #FCF4E5;
 $purple: #412b44;
 $a: #be5154;
@@ -16,12 +16,12 @@ $a-h: darken($a, 30%);
 }
 
 
-body { opacity: 0; padding-bottom: 50px; /* cursor:url(../images/cursor1.png) 5 5,default; */ padding-top: 500px; @include transition(opacity 1.2s ease-in);  @include transition-delay(0.2s); font-family: Lato !important; font-weight: 500; line-height: 32px; font-size: 18px; color:#444; 
+body { opacity: 0; padding-bottom: 50px; /* cursor:url(../images/cursor1.png) 5 5,default; */ padding-top: 500px; @include transition(opacity 1.2s ease-in);  @include transition-delay(0.2s); font-family: Lato !important; font-weight: 500; line-height: 32px; font-size: 18px; color:#444;
 	&.fadein { opacity: 1;
 		section.background {
 			h1, h2 {@include transition(all 0.8s ease-in);  @include transition-delay(1s);  top: 0; opacity: 1;}
 		}
-		section.content { 
+		section.content {
 			.myimage { @include transition(all 0.8s ease-in);  @include transition-delay(1.8s); opacity: 1; top: -75px; }
 			.myimage2 { @include transition(all 0.8s ease-in);  @include transition-delay(1.8s); opacity: 1; top: -116px; }
 		}
@@ -45,24 +45,24 @@ a, button { color:$a; @include transition(all 0.3s ease-in-out); border-bottom: 
 @mixin blur($a){
 	-webkit-filter: blur($a); -moz-filter: blur($a); -o-filter: blur($a); -ms-filter: blur($a); filter: blur($a);
 }
-section.background {  position: fixed; top: 0; left: 0; color:$header; z-index: 8; width: 100%; height: 500px; 
+section.background {  position: fixed; top: 0; left: 0; color:$header; z-index: 8; width: 100%; height: 500px;
 	&:after { position: absolute; top: 0; left: 0; z-index: 7; width: 100%; height: 100%; background:rgba(255,255,255,0.15); content:'';  }
 	.container { text-align: center; z-index: 7; padding-top: 180px; position: relative; }
 	h1, h2 { top: -20px; opacity: 0; position: relative; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
 	h1 { color:$white;}
-	.bg1 { background:url(../images/5.jpg) no-repeat 50% -220px; width: 100%; height: 500px; position: absolute; z-index: 5; }
-	.bg2 { background:url(../images/6.jpg) no-repeat 50% -220px; width: 100%; height: 500px;  position: absolute; z-index: 6; 
+	.bg1 { background:url(../images/2.jpg) no-repeat 50% -220px; width: 100%; height: 500px; position: absolute; z-index: 5; }
+	.bg2 { background:url(../images/4.jpg) no-repeat 50% -220px; width: 100%; height: 500px;  position: absolute; z-index: 6; 
 		&.shown { opacity: 1 !important; @include transition(opacity 0.5s ease-in-out);}
 	}
 	.blur { opacity: 0; }
 	.contact { position: absolute; z-index: -9; top: 130px; width: 100%; opacity: 0; @include transition(all 0.5s ease-in-out);
-		.container { padding:0 300px; 
+		.container { padding:0 300px;
 			input, textarea { background: transparent; border-radius: 0; border: 2px solid $white; color: $white; padding: 8px 10px; height: auto;}
 		}
 		&.open { z-index:99; opacity: 1; }
 		form { position: relative;
 			label { color:$white; }
-			button { position: absolute; border:2px solid $white; bottom: 0; right: -66px; background:transparent; border-radius: 0; color:$white; 
+			button { position: absolute; border:2px solid $white; bottom: 0; right: -66px; background:transparent; border-radius: 0; color:$white;
 				&:hover { background:$white; color:$purple; }
 			}
 		}
