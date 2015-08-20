@@ -50,8 +50,8 @@ section.background {  position: fixed; top: 0; left: 0; color:$header; z-index: 
 	.container { text-align: center; z-index: 7; padding-top: 180px; position: relative; }
 	h1, h2 { top: -20px; opacity: 0; position: relative; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
 	h1 { color:$white;}
-	.bg1 { background:url(../images/2.jpg) no-repeat 50% -220px; width: 100%; height: 500px; position: absolute; z-index: 5; }
-	.bg2 { background:url(../images/4.jpg) no-repeat 50% -220px; width: 100%; height: 500px;  position: absolute; z-index: 6;
+	.bg1 { background:url(../images/2.jpg) no-repeat 50% -100px; width: 100%; height: 500px; position: absolute; z-index: 5; }
+	.bg2 { background:url(../images/4.jpg) no-repeat 50% -100px; width: 100%; height: 500px;  position: absolute; z-index: 6;
 		&.shown { opacity: 1 !important; @include transition(opacity 0.5s ease-in-out);}
 	}
 	.blur { opacity: 0; }
